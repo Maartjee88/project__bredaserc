@@ -1,6 +1,52 @@
+/**
+ * Respond-to mixin
+ * Put style declarations within a media query.
+ * It will try to get the media query from the $breakpoints map
+ *
+ * @param  {key|value} $min-width  		Media media query name or value to start from
+ * @param  {key|value} [$max-width]		Optional media query name or value to end (minus 1px of 0.01em/rem/etc)
+ *
+ * @see {@link http://tzi.fr/css/responsive/prevent-double-breakpoint}
+ *
+ */
+@import url("https://fonts.googleapis.com/css?family=Lato:400|Oswald:600");
+@media (min-width: 30em) {
+  html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@media (min-width: 48em) {
+  html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@media (min-width: 64em) {
+  html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@media (min-width: 80em) {
+  html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+@media (min-width: 90em) {
+  html {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
 /*! bulma.io v0.9.2 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
-@import url("https://fonts.googleapis.com/css?family=Lato:400|Oswald:600");
 .button, .input, .textarea, .select select, .file-cta,
 .file-name, .pagination-previous,
 .pagination-next,
@@ -12850,6 +12896,20 @@ h4,
 h5,
 h6 {
   font-family: 'Oswald', sans-serif;
+}
+
+.header__sponsors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__sponsors img {
+  width: 48%;
 }
 
 .navbar-brand img {
