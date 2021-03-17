@@ -9,7 +9,7 @@
  * @see {@link http://tzi.fr/css/responsive/prevent-double-breakpoint}
  *
  */
-@import url("https://fonts.googleapis.com/css?family=Lato:400|Oswald:600");
+@import url("https://fonts.googleapis.com/css?family=Lato:400|Oswald:400;600");
 @media (min-width: 30em) {
   html {
     -webkit-box-sizing: border-box;
@@ -12882,11 +12882,15 @@ p {
   margin-bottom: 1rem;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3 {
   margin: 3rem 0 1.38rem;
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
   line-height: 1.3;
+}
+
+h4, h5, h6 {
+  font-weight: 400;
 }
 
 h1,
@@ -12989,6 +12993,11 @@ h6 {
 
 section.section--grey {
   background-color: #F5F5F5;
+}
+
+.sign-up .sign-up__form.field {
+  display: inline-block;
+  width: 49%;
 }
 
 .sponsors img {
