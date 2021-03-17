@@ -12898,6 +12898,76 @@ h6 {
   font-family: 'Oswald', sans-serif;
 }
 
+.button--primary {
+  background-color: #FBA132;
+  color: white;
+  border: 1px solid #FBA132;
+}
+
+.button--primary:hover, .button--primary:focus, .button--primary:active {
+  opacity: 0.8;
+  color: white;
+  border: 1px solid #FBA132;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.button--secondary {
+  background-color: #328CFB;
+  color: white;
+  border: 1px solid #328CFB;
+}
+
+.button--secondary:hover, .button--secondary:focus, .button--secondary:active {
+  opacity: 0.8;
+  color: white;
+  border: 1px solid #328CFB;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 1.3em;
+}
+
+.card__visual {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 48%;
+}
+
+.card__visual img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.card__text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 48%;
+}
+
+.card__text h2 {
+  margin-top: 0;
+}
+
 .header__sponsors {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12915,4 +12985,8 @@ h6 {
 .navbar-brand img {
   max-height: 6em;
   padding: 0.7em;
+}
+
+section.section--grey {
+  background-color: #F5F5F5;
 }
