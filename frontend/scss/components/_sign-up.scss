@@ -1,0 +1,8 @@
+$module: 'sign-up';
+
+.#{$module} {
+    .sign-up__form.field {
+        display: inline-block;
+        width: 49%;
+    }
+}
